@@ -1,0 +1,101 @@
+d:/GDRIVE/School/DEVIT_UNI/2020_T1/SIT210/OnTrack/SIT210-03.1P/SIT210-Task3_1P-WebHook/target/1.4.4/photon//obj/src/newlib_stubs.o: \
+ src/newlib_stubs.cpp \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\types.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_ansi.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\newlib.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_newlib_version.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\config.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\ieeefp.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\features.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\cdefs.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\_default_types.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stddef.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\_types.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_types.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\lock.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_stdint.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\types.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\select.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\stdlib.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_ansi.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\reent.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\stdlib.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\alloca.h \
+ ../../../services/inc/debug.h ../../../services/inc/service_debug.h \
+ ../../../services/inc/logging.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\string.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\string.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stdint.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\stdint.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_intsup.h \
+ c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stdarg.h \
+ ../../../services/inc/panic.h ../../../services/inc/panic_codes.h \
+ ../../../services/inc/config.h ../../../services/inc/preprocessor.h
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\types.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_ansi.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\newlib.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_newlib_version.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\config.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\ieeefp.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\features.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\cdefs.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\_default_types.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stddef.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\_types.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_types.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\lock.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_stdint.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\types.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\select.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\stdlib.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_ansi.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\reent.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\stdlib.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\alloca.h:
+
+../../../services/inc/debug.h:
+
+../../../services/inc/service_debug.h:
+
+../../../services/inc/logging.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\string.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\string.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stdint.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\stdint.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_intsup.h:
+
+c:\users\tjcook\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stdarg.h:
+
+../../../services/inc/panic.h:
+
+../../../services/inc/panic_codes.h:
+
+../../../services/inc/config.h:
+
+../../../services/inc/preprocessor.h:
