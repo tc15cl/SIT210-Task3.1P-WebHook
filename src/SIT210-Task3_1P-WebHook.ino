@@ -1,21 +1,22 @@
-// This #include statement was automatically added by the Particle IDE.
+/*
+ * Project SIT210 Task3.1P - Webhook
+ * Description: Create webhook between particle & thingspeak
+ * Author: tjcook (214014891)
+ * Date: 27/03/2020
+ */
+
+
+//Library for SI1145 UV sensor
 #include <Adafruit_SI1145.h>
 
-const int MAXRETRY = 4; //
-const uint32_t msSAMPLE_INTERVAL = 2500;
-const uint32_t msMETRIC_PUBLISH = 30000;
-const int TEMPPIN = D2;
-const int FLOWPIN = A0;
-const int MOIST1PIN = A1;
-
-//UV: 
+//reference Adafruit SI1145 UV sesnor library
 Adafruit_SI1145 uv = Adafruit_SI1145();
 
+//float variables for UV data
 float UVVis;
 float UVIR;
 float UVIdx;
-String thingSpeakAPIKey = "S27LXW5LQALI7PO4";
-String thingSpeakChan = "1026924";
+
 
 void setup() {
   while(! uv.begin()) {
@@ -45,9 +46,9 @@ void getUV(){
 void publishData(){
   Particle.publish("UV", "{ \"UVVis\": \"" + String(UVVis) + "\"," +
    "\"UVIR\": \"" + String(UVIR) + "\"," +
-    "\"UVIdx\": \"" + String(UVIdx) + "\"," + 
-     "\"key\": \"" + thingSpeakAPIKey + "\" +
-      "\"channel\": \"" + thingSpeakChan + "\"}", PRIVATE);  
+    "\"UVIdx\": \"" + String(UVIdx) + "\"}", PRIVATE); 
+     //"\"key\": \"" + thingSpeakAPIKey + "\" +
+      //"\"channel\": \"" + thingSpeakChan + "\"}", PRIVATE);  
   delay(30000);
 } 
 

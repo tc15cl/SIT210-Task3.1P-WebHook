@@ -4,28 +4,33 @@
 
 #include "Particle.h"
 #line 1 "d:/GDRIVE/School/DEVIT_UNI/2020_T1/SIT210/OnTrack/SIT210-03.1P/SIT210-Task3_1P-WebHook/src/SIT210-Task3_1P-WebHook.ino"
-// This #include statement was automatically added by the Particle IDE.
+/*
+ * Project SIT210 Task3.1P - Webhook
+ * Description: Create webhook between particle & thingspeak
+ * Author: tjcook (214014891)
+ * Date: 27/03/2020
+ */
+
+
+//Library for SI1145 UV sensor
 #include <Adafruit_SI1145.h>
 
+//reference Adafruit SI1145 UV sesnor library
 void setup();
 void loop();
 void getUV();
 void publishData();
-#line 4 "d:/GDRIVE/School/DEVIT_UNI/2020_T1/SIT210/OnTrack/SIT210-03.1P/SIT210-Task3_1P-WebHook/src/SIT210-Task3_1P-WebHook.ino"
-const int MAXRETRY = 4; //
-const uint32_t msSAMPLE_INTERVAL = 2500;
-const uint32_t msMETRIC_PUBLISH = 30000;
-const int TEMPPIN = D2;
-const int FLOWPIN = A0;
-const int MOIST1PIN = A1;
-
-//UV: 
+#line 13 "d:/GDRIVE/School/DEVIT_UNI/2020_T1/SIT210/OnTrack/SIT210-03.1P/SIT210-Task3_1P-WebHook/src/SIT210-Task3_1P-WebHook.ino"
 Adafruit_SI1145 uv = Adafruit_SI1145();
 
+//float variables for UV data
 float UVVis;
 float UVIR;
 float UVIdx;
-String thingSpeakAPIKey = "S27LXW5LQALI7PO4";
+
+//String variables for thingspeak API channel * key
+//String thingSpeakAPIKey = "S27LXW5LQALI7PO4";
+//String thingSpeakChan = "1026924";
 
 void setup() {
   while(! uv.begin()) {
@@ -51,13 +56,13 @@ void getUV(){
 }
 
 
-
+//Function to publish 
 void publishData(){
-  //Particle.publish( "UV", String(UVVis), 60, PRIVATE);
   Particle.publish("UV", "{ \"UVVis\": \"" + String(UVVis) + "\"," +
    "\"UVIR\": \"" + String(UVIR) + "\"," +
-    "\"UVIdx\": \"" + String(UVIdx) + "\"," + 
-     "\"key\": \"" + thingSpeakAPIKey + "\" }", PRIVATE);  
+    "\"UVIdx\": \"" + String(UVIdx) + "\"}", PRIVATE); 
+     //"\"key\": \"" + thingSpeakAPIKey + "\" +
+      //"\"channel\": \"" + thingSpeakChan + "\"}", PRIVATE);  
   delay(30000);
 } 
 
