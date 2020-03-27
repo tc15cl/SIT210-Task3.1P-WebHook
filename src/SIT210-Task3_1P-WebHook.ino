@@ -9,7 +9,7 @@
 //Library for SI1145 UV sensor
 #include <Adafruit_SI1145.h>
 
-//reference Adafruit SI1145 UV sesnor library
+//reference Adafruit SI1145 UV sensor library class
 Adafruit_SI1145 uv = Adafruit_SI1145();
 
 //float variables for UV data
@@ -18,23 +18,24 @@ float UVIR;
 float UVIdx;
 
 
-void setup() {
-  while(! uv.begin()) {
-    Serial.println("Didn't find Si1145");
-    delay(1000);
-  }
-
-  Serial.println("OK!");
+//Call UV sensor library method uv.begin()
+void setup() 
+{
+  uv.begin();
 }
 
-void loop() {
+
+//Call getUV and publish functions
+void loop() 
+{
     getUV();
-    publishData();
-        
+    publishData(); 
 }
 
 
-void getUV(){
+//Function to read UV data from sensor
+void getUV()
+{
     UVVis = uv.readVisible();
     UVIR = uv.readIR();
     UVIdx = uv.readUV();
@@ -42,13 +43,12 @@ void getUV(){
 }
 
 
-//Function to publish 
-void publishData(){
+//Function to publish data every 30 seconds
+void publishData()
+{
   Particle.publish("UV", "{ \"UVVis\": \"" + String(UVVis) + "\"," +
    "\"UVIR\": \"" + String(UVIR) + "\"," +
     "\"UVIdx\": \"" + String(UVIdx) + "\"}", PRIVATE); 
-     //"\"key\": \"" + thingSpeakAPIKey + "\" +
-      //"\"channel\": \"" + thingSpeakChan + "\"}", PRIVATE);  
   delay(30000);
 } 
 

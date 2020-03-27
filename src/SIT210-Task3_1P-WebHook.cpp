@@ -15,7 +15,7 @@
 //Library for SI1145 UV sensor
 #include <Adafruit_SI1145.h>
 
-//reference Adafruit SI1145 UV sesnor library
+//reference Adafruit SI1145 UV sensor library class
 void setup();
 void loop();
 void getUV();
@@ -28,27 +28,25 @@ float UVVis;
 float UVIR;
 float UVIdx;
 
-//String variables for thingspeak API channel * key
-//String thingSpeakAPIKey = "S27LXW5LQALI7PO4";
-//String thingSpeakChan = "1026924";
 
-void setup() {
-  while(! uv.begin()) {
-    Serial.println("Didn't find Si1145");
-    delay(1000);
-  }
-
-  Serial.println("OK!");
+//Call UV sensor library method uv.begin()
+void setup() 
+{
+  uv.begin();
 }
 
-void loop() {
+
+//Call getUV and publish functions
+void loop() 
+{
     getUV();
-    publishData();
-        
+    publishData(); 
 }
 
 
-void getUV(){
+//Function to read UV data from sensor
+void getUV()
+{
     UVVis = uv.readVisible();
     UVIR = uv.readIR();
     UVIdx = uv.readUV();
@@ -56,13 +54,12 @@ void getUV(){
 }
 
 
-//Function to publish 
-void publishData(){
+//Function to publish data every 30 seconds
+void publishData()
+{
   Particle.publish("UV", "{ \"UVVis\": \"" + String(UVVis) + "\"," +
    "\"UVIR\": \"" + String(UVIR) + "\"," +
     "\"UVIdx\": \"" + String(UVIdx) + "\"}", PRIVATE); 
-     //"\"key\": \"" + thingSpeakAPIKey + "\" +
-      //"\"channel\": \"" + thingSpeakChan + "\"}", PRIVATE);  
   delay(30000);
 } 
 
